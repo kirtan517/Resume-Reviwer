@@ -20,16 +20,40 @@ RESUME_PROMPTS = {
             5. Personal characteristics and attributes; however, include only those that are relevant to the position user is seeking and if it aligns with the job description (e.g., consistently able to deliver results under tight deadlines vs punctual, honest, etc.)
             6. Specialized training/education if completed by user otherwise it should not be mentioned (e.g., “CPR certification”)
 
-            Rewrite just the user summary section along with job discription provided with all the above Goal in check and follow instructions provided in the above list if applicable.
+            Rewrite just the user summary section based on the job discription provided with all the above Goal in check and follow instructions provided in the above list if applicable.
             Your response should be in form of paragraph
 	""",
-	"Experience":"""
+	"Experience":"""This is the users work experience section which you are going to rewrite for user who is applying for specific job.
+		Follow following instruction while rewriting users work experience
+	
+		1. Include three to five points outlining your most relevant strengths
+		2. List your points in decreasing order of importance for the type of work you are seeking (i.e., most relevant first)
+		3. In point form, describe what you accomplished on the job
+		4. Begin each point with either a skill or achievement action verb ; avoid generic verbs such as “helped” or “assisted”
+		5. Use the present tense for ongoing jobs and the past tense for past jobs
+		6. Do not use vague expressions such as “responsible for” or “duties included”; they don’t tell the employer the scope of users accomplishments
+		7. Describe the most relevant points in greater detail (e.g., in an entry about report writing, users would include information about literature searches only if that part of the experience was relevant to the job)
+		8. If users work experience is not directly related, emphasize transferable skills (e.g., if user worked as a server and now want to work in an administrative role, emphasize users ability to work under pressure/stress, communicative/interpersonal skills, attention to detail, etc.)
+		9. There is no rule concerning how recent an experience must be to include it on your résumé; if it is relevant, include it
+		10. If user learned something on the job (e.g., how to use a new piece of software) but did not have a chance to use it,include a “learned” statement (e.g., learned how to use Excel); use this approach sparingly
+		11. Indicate users level of responsibility (e.g., “depositing cash” or “managing a department during the absence of supervisor”) and provide evidence of promotion if applicable
+		12. Personal pronouns such as “my” and “their,” or definite and indefinite articles: “a,” “an,” or “the” are not typically included in bullet points on a résumé
+		
+		Rewrite just the user education section based on the job discription provided by following above instructions.
+		Your response should be in from of bullet point for each experience heading
+		Add only few of your extra information otherwise use what user is providing.
 	""",
-	"Projects":"""
+	"Projects":"""Include one to three substantive projects and/or assignments user have completed in high school or university that are relevant to the type of job you are hoping to attain. This is particularly helpful for those with relatively little paid work or volunteer experience. Consider creating this section as a sub-heading or as a bullet point of the Education section:
+
+		1. Provide the project or assignment title, the class or lab the project or assignment was completed in, and dates (e.g., “Method of Practice Report, Introduction to Social Work, Sept. – Dec. 20xx”; “Payroll Database Assignment, Introduction to Computing, Sept. – Dec. 20xx”; “Circuit Analysis Project, Circuit Analysis Lab, Feb. – June 20xx”)
+		2. List your points in reverse chronological order
+		3. Include several bullet points to describe what user have accomplished; begin each bullet point with an action verb (e.g., Presented 50-page report to panel of five faculty resulting in grade of 95%)
+		4. Do not use vague expressions such as “responsible for” or “duties included”; avoid generic verbs such as “helped” or “assisted”
+		5. Use past tense since a project/assignment is added to your résumé when completed
+		
+		Rewrite just the user project section based on the job discription provided by following above instructions.
+		Your response should be in from of bullet point for each project heading
+		Feel free to remove some of the projects which are not relevant
 	""",
 }
 
-ASSESS_PROMPTS =  """You are an experienced recruiter writer with over 10 years of experience.
-					This is Summary section of the resume rate it from scale of 1-10 and also provide some feedback to imporve the resume if available.
-					Critize wherever possible
-					"""
